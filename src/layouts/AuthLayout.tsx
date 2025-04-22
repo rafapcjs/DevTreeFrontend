@@ -1,6 +1,6 @@
-import React from "react";
-import "../index.css"; // Path:
+ import "../index.css"; // Path:
 import { Outlet } from "react-router-dom";
+import { Toaster } from "sonner";
 
 export default function AuthLayout() {
   return (
@@ -13,6 +13,7 @@ export default function AuthLayout() {
          </div>
         </div>
       </div>
+      <Toaster position="top-right"/>
     </>
   );
 }
